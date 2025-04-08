@@ -2,14 +2,22 @@
     "version": 2,
     "builds": [
       {
-        "src": "index.html",
+        "src": "success.html",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "cancel.html",
         "use": "@vercel/static"
       }
     ],
     "routes": [
       {
-        "src": "/(.*)",
-        "dest": "/$1"
+        "src": "/success",
+        "dest": "/success.html"
+      },
+      {
+        "src": "/cancel",
+        "dest": "/cancel.html"
       }
     ]
   }
