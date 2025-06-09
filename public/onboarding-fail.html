@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirection vers l'app</title>
+  <meta charset="UTF-8" />
+  <script>
+    // Ça tente d'ouvrir ton app
+    window.location = "padelmatch://onboarding-success";
+    // Fallback : propose un bouton ou message si l'app n'est pas installée
+    setTimeout(function() {
+      document.getElementById('fallback').style.display = 'block';
+    }, 2000);
+  </script>
+</head>
+<body>
+  <p>Redirection vers l'application PadelMatch...</p>
+  <div id="fallback" style="display:none">
+    <p>Si rien ne se passe, ouvrez l’application PadelMatch.</p>
+  </div>
+</body>
+</html>
