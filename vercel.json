@@ -3,12 +3,12 @@
   "public": true,
   "routes": [
     {
-      "src": "/success",
-      "dest": "/success.html"
+      "src": "/onboarding-success",
+      "dest": "/onboarding-success.html"
     },
     {
-      "src": "/cancel",
-      "dest": "/cancel.html"
+      "src": "/onboarding-fail",
+      "dest": "/onboarding-fail.html"
     }
   ]
 }
